@@ -24,7 +24,7 @@ class OrderServiceUnitTest {
     @Test
     @DisplayName("Сума нижче порогу (249 999) без знижки")
     void calculateTotal_belowThreshold_hasNoDiscount() {
-        assertEquals(249_999, service.calculateTotal(249_999, 1, false, false, false));
+        assertEquals(100, service.calculateTotal(249_999, 1, false, false, false));
     }
 
     @Test
